@@ -151,6 +151,58 @@ img {
   align-items: center;
 }
 
+.address {
+  display: flex;
+  align-self: center;
+}
+
+.address svg {
+  /* align-self: center; */
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.address:hover svg,
+.address:focus svg {
+  fill: #2196f3;
+  border: 0;
+}
+
+/* .mail::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../img/icon/envelope.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tell::before {
+  content: '';
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../img/icon/smartphone.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.auth-nav .address {
+  display: flex;
+  align-items: center;
+} */
+
+/* .header {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+  color-portfolio
+} */
+
 /* ============/ HEADER /=============== */
 
 /* ============== ГЛАВНЫЙ БЛОК ================== */
@@ -164,7 +216,6 @@ img {
 
 .text-button {
   display: inline-block;
-  background-color: #2f303a;
   width: 696px;
 }
 .hero-text {
@@ -193,14 +244,26 @@ img {
   border: 1px solid transparent;
 }
 
+.hero {
+  max-width: 1600px;
+  height: 600x;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* =========== / ГЛАВНЫЙ БЛОК /============== */
 
 /* =============== НАШЕ ПРЕИМУЩЕСТВО ========== */
 
-.advantage {
-  padding-top: 89px;
-  padding-bottom: 94px;
-}
 .key-slogan {
   margin-top: 0;
   margin-bottom: 10px;
@@ -227,11 +290,27 @@ img {
 
 .advantage-text .item {
   width: 270px;
-  height: 101px;
+  height: 251px;
 }
 
 .advantage-text .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.advantage {
+  padding-top: 89px;
+  padding-bottom: 94px;
+}
+
+.advantage-icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .advantage-text {
@@ -248,6 +327,33 @@ img {
 
 .advantage-text .item:nth-child(4n){
   margin-right: 0;
+} */
+
+/* .advantage-text .item::before {
+  content: '';
+  height: 120px;
+  display: inline-block;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 70px 70px, contain;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  outline: 1px solid red;
+} */
+
+/* .children::before {
+  background-image: url(../img/icon/antenna.png);
+}
+.punctuality::before {
+  background-image: url(../img/icon/clock.png);
+}
+.planning::before {
+  background-image: url(../img/icon/Vector.png);
+}
+.technologies::before {
+  background-image: url(../img/icon/astronaut.png);
 } */
 
 /* =============== / Наше ПРЕИМУЩЕСТВО / ========== */
@@ -303,7 +409,7 @@ img {
 
 .may {
   padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   /* background-color: brown;
   border: 1px solid black; */
 }
@@ -321,7 +427,7 @@ img {
 
 .profession {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -330,9 +436,9 @@ img {
   color: var(--text-color);
 }
 
-.team-may li {
+.card-master {
   width: 270px;
-  height: 368px;
+  height: 428px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -343,11 +449,94 @@ img {
   display: flex;
 }
 
-.team-may li:not(:last-child) {
+.card-master:not(:last-child) {
   margin-right: 30px;
+}
+.may ul {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin: 0 auto;
+}
+
+.networks a {
+  display: flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.networks svg {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+
+.networks a:hover svg,
+.networks a:focus svg {
+  fill: white;
+}
+.networks a:hover,
+.networks a:focus {
+  background-color: #2196f3;
 }
 
 /* ==================== / НАША КОМАНДА /=========================== */
+
+/* ==================== ПОСТОЯННЫЕ КЛИЕНТЫ ======================== */
+
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-text {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.regular {
+  display: flex;
+}
+
+.box:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regular-customers {
+  display: flex;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+.regular-customers svg {
+  fill: #afb1b8;
+}
+
+.regular-customers:hover svg,
+.regular-customers:focus svg {
+  fill: #2196f3;
+}
+
+.regular-customers:hover,
+.regular-customers:focus {
+  border-color: #2196f3;
+}
+
+/* ==================== / ПОСТОЯННЫЕ КЛИЕНТЫ / ======================== */
 
 /* ==================== FOOTER ============================== */
 
@@ -360,6 +549,7 @@ img {
 .white-logo {
   display: block;
   margin-top: 0;
+  margin-right: 0;
   margin-bottom: 20px;
   font-family: var(--logo-text);
   font-weight: bold;
@@ -389,6 +579,58 @@ img {
 .footer-address .item {
   margin-bottom: 8px;
 }
+
+.join-us {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.references:not(:last-child) {
+  margin-right: 10px;
+}
+
+.joining {
+  display: flex;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+}
+
+.box-left {
+  margin-right: 70px;
+}
+
+.references a {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.references svg {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.references a:hover,
+.references a:focus {
+  background-color: #2196f3;
+}
+
 /* ====================== / FOOTER /============================== */
 
 /* ======================= * ПОРТФОЛИО * ====================== */
@@ -422,6 +664,8 @@ img {
 .linc-button:focus {
   background-color: var(--link-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button {
@@ -469,9 +713,17 @@ img {
 }
 
 .cards {
-  background: #ffffff;
+  width: 370px;
+  height: 404px;
+  background-color: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+
+.cards:hover,
+.cards:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .information {
