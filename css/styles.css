@@ -92,6 +92,8 @@ img {
 
 .site-nav a,
 .auth-nav a {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -113,6 +115,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  fill: #757575;
 }
 
 /* .auth-nav .item .address {
@@ -123,6 +126,7 @@ img {
 .address:hover,
 .address:focus {
   color: var(--link-color);
+  fill: #2196f3;
 }
 
 .menu {
@@ -157,15 +161,7 @@ img {
 }
 
 .address svg {
-  /* align-self: center; */
   margin-right: 10px;
-  fill: #757575;
-}
-
-.address:hover svg,
-.address:focus svg {
-  fill: #2196f3;
-  border: 0;
 }
 
 /* .mail::before {
@@ -408,10 +404,7 @@ img {
 }
 
 .may {
-  padding-top: 30px;
-  /* padding-bottom: 30px; */
-  /* background-color: brown;
-  border: 1px solid black; */
+  padding: 30px 32px;
 }
 
 .name {
@@ -436,6 +429,10 @@ img {
   color: var(--text-color);
 }
 
+.team-may {
+  display: flex;
+}
+
 .card-master {
   width: 270px;
   height: 428px;
@@ -445,21 +442,18 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-may {
-  display: flex;
-}
-
 .card-master:not(:last-child) {
   margin-right: 30px;
 }
 .may ul {
   display: flex;
   justify-content: space-between;
-  width: 206px;
-  margin: 0 auto;
+  /* width: 206px; */
+  /* margin: 0 auto; */
 }
 
 .networks a {
+  fill: #afb1b8;
   display: flex;
   border-radius: 50%;
   width: 44px;
@@ -469,18 +463,14 @@ img {
 }
 
 .networks svg {
-  fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
 
-.networks a:hover svg,
-.networks a:focus svg {
-  fill: white;
-}
 .networks a:hover,
 .networks a:focus {
   background-color: #2196f3;
+  fill: white;
 }
 
 /* ==================== / НАША КОМАНДА /=========================== */
@@ -509,31 +499,29 @@ img {
   display: flex;
 }
 
+.box {
+  width: 170px;
+  height: 90px;
+}
+
 .box:not(:last-child) {
   margin-right: 30px;
 }
 
 .regular-customers {
   display: flex;
+  fill: #afb1b8;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 170px;
-  height: 90px;
-}
-
-.regular-customers svg {
-  fill: #afb1b8;
-}
-
-.regular-customers:hover svg,
-.regular-customers:focus svg {
-  fill: #2196f3;
+  width: 100%;
+  height: 100%;
 }
 
 .regular-customers:hover,
 .regular-customers:focus {
   border-color: #2196f3;
+  fill: #2196f3;
 }
 
 /* ==================== / ПОСТОЯННЫЕ КЛИЕНТЫ / ======================== */
@@ -580,6 +568,10 @@ img {
   margin-bottom: 8px;
 }
 
+.box-left {
+  margin-right: 70px;
+}
+
 .join-us {
   margin-top: 0;
   margin-bottom: 20px;
@@ -603,11 +595,7 @@ img {
 
 footer .container {
   display: flex;
-  align-items: center;
-}
-
-.box-left {
-  margin-right: 70px;
+  align-items: baseline;
 }
 
 .references a {
@@ -618,10 +606,10 @@ footer .container {
   height: 44px;
   justify-content: center;
   align-items: center;
+  fill: #ffffff;
 }
 
 .references svg {
-  fill: #ffffff;
   width: 20px;
   height: 20px;
 }
