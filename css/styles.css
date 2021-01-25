@@ -58,6 +58,10 @@ img {
   overflow: hidden;
 }
 
+a {
+  display: block;
+}
+
 /* ========== BODY =============== */
 
 /* =========== HEADER ============ */
@@ -435,7 +439,6 @@ img {
 
 .card-master {
   width: 270px;
-  height: 428px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -676,7 +679,7 @@ footer .container {
 /* =================== Ссылки (Примеры работ)================ */
 
 .title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
@@ -693,14 +696,8 @@ footer .container {
   color: var(--text-color);
 }
 
-.cards-box {
-  margin: 0;
-  width: 322px;
-  height: 70px;
-  margin: 20px 24px;
-}
-
 .cards {
+  display: block;
   width: 370px;
   height: 404px;
   background-color: #ffffff;
@@ -708,8 +705,12 @@ footer .container {
   box-sizing: border-box;
 }
 
-.cards:hover,
-.cards:focus {
+.cards-box {
+  padding: 20px 24px;
+}
+
+.cards a:hover,
+.cards a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
