@@ -676,11 +676,6 @@ footer .container {
 
 /* =================== Ссылки (Примеры работ)================ */
 
-.information {
-  display: flex;
-  justify-content: space-between;
-}
-
 .title {
   margin-top: 0;
   margin-bottom: 4px;
@@ -719,6 +714,7 @@ footer .container {
 .information {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .cards {
