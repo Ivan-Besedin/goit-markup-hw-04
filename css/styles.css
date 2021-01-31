@@ -707,7 +707,10 @@ footer .container {
 }
 
 .cards-box {
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /* padding: 20px 24px; */
 }
 
 .cards a:hover,
